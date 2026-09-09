@@ -1,7 +1,7 @@
 // --- ARQUIVO DE FUNÇÕES ---
 
 function calcularOrcamento(precoPeca, horasTrabalho) {
-    const valorHora = 85.00; 
+    const calcularMaoDeObrahoras = 80.00; 
     const totalMaoDeObra = horasTrabalho * valorHora;
     return precoPeca + totalMaoDeObra;
 }
