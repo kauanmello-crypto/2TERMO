@@ -15,3 +15,4 @@ for (let i = 0; i < produtos.length; i++) {
     console.log(`${produtos[i]}: ${precos[i]} por R${precoComDesconto.toFixed(2)}`)
 }
 
+
