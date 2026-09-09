@@ -1,5 +1,0 @@
-const entrada = require('readline-sync');
-
-const nome = entrada.question ("Seu nome: ");
-const nascimento = entrada.questionInt ("nascimento: ");
-
