@@ -4,5 +4,17 @@
 ---------------------------------------------------------
 
 INSERT INTO cliente (nome, email, telefone, cidade, ativo) VALUES
-('Bruno M', 'Brunom@email.com', '19999999999', 'Piracicaba', TRUE),
-('Kauan R', 'KauanR@email.com', '19999999988', 'Estatos Unidos', TRUE)
+('leticia ', 'leticia@email.com', '19999999999', 'Piracicaba', TRUE),
+('Kauan R', 'Kauan@email.com', '19999999988', 'Estatos Unidos', TRUE);
+
+SET @cliente = LAST_INSERT_ID();
+
+INSERT INTO categoria (nome) VALUES ('Especiais da Casa');
+
+
+
+
+
+
+SET @categoria = LAST_INSERT_ID();
+
