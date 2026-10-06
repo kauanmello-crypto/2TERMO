@@ -1,0 +1,17 @@
+[
+  {
+    "nome": "pastilha",
+    "quantidade": 1,
+    "custoUnitario": 500
+  },
+  {
+    "nome": "suporte",
+    "quantidade": 2,
+    "custoUnitario": 20
+  },
+  {
+    "nome": "torneira",
+    "quantidade": 5,
+    "custoUnitario": 300
+  }
+]
