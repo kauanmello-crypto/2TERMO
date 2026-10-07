@@ -1,0 +1,20 @@
+.equipe {
+   display: flex; /* Exercicio 1 */
+  justify-content: space-between;
+    gap: 30px;    /* Exercicio 2   */
+  
+/* Exercicio3 */
+ justify-content: flex-start; /*alinha o texto no eixo principal */
+ justify-content: center; /*alinha no centro do eixo principal */
+ justify-content: flex-end; /*alinha o texto no final do eixo */
+justify-content: space-between; /* Ele distribui os itens uniformemente */
+justify-content: space-evenly; /* Distribui os itens de forma a que nao fique o espaço entre dois itens */
+
+}
+
+.area {
+    display: flex;
+    height: 129px;
+    align-items: center;
+}
+
