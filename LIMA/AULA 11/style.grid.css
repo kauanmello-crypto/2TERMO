@@ -1,0 +1,44 @@
+/* Exercicio 1 */
+.grid-1 {
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
+}
+/* Exercicio 2 */
+.grid-2 {
+    display: grid;
+     grid-template-columns: repeat(2, 1fr);
+}
+/* Exercicio 3 */
+.grid-3 {
+   display: grid;
+      grid-template-columns: 2fr 1fr; /* 2fr é o dobro do tamanho da coluna com 1f */
+    
+}
+/* Exercicio 4 */
+.grid-4 {
+    display: grid;
+     grid-template-columns: repeat(4, 1fr);
+}
+
+/* Exercicio 5 */
+.grid-5 { /* desktop; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+ @media (max-width: 900px) { /*tablet; */
+    .grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {/* CELULAR */
+    .grid-5 {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
