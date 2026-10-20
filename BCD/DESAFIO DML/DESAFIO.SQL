@@ -31,28 +31,36 @@ INSERT INTO produto (nome_produto, descricao, preco, id_categoria, ativo) VALUES
 ('Latte Especial', 'Latte com essência de baunilha', 11.00, (SELECT id_categoria FROM categoria WHERE nome_categoria = 'Especiais da Casa'), TRUE);
 
 -- 4. Cadastre um terceiro cliente sem telefone.
+INSERT INTO cliente (nome, email, cidade, ativo) VALUES 
+('ANA', 'ANA@email.com', 'São Paulo', TRUE);
 
 
 -- 5. Crie um novo pedido para um dos clientes cadastrados.
-
+INSERT INTO pedido (data_pedido, cliente_id, status_pedido, valor_total) VALUES 
+(NOW(), (SELECT id_clientes FROM cliente WHERE nome = 'ANA'), 'PENDENTE', 0.00);
 
 -- 6. Use LAST_INSERT_ID() para guardar o id do pedido em @pedido_atividade
 --    e insira pelo menos dois itens nesse pedido.
-
+INSERT INTO item_pedido (pedido_id, produto_id, quantidade, preco_unitario) VALUES 
+(@pedido_atividade := LAST_INSERT_ID(), (SELECT id_produto FROM produto WHERE nome_produto = 'Cappuccino Especial'), 2, 12.50),
+(@pedido_atividade, (SELECT id_produto FROM produto WHERE nome_produto = 'Mocha Especial'), 1, 13.00);
 
 -- PARTE B - UPDATE
 
 -- 7. Corrija o telefone de um dos clientes criados.
 -- SELECT de validação:
--- UPDATE:
+
+-- UPDATE: INSERT INTO cliente (nome, email, telefone, cidade, ativo) VALUES 
+
 -- SELECT final:
 
 
 -- 8. Altere cidade e telefone de outro cliente em um único UPDATE.
 
 
--- 9. Aumente em 8% o preço dos produtos da categoria 'Especiais da Casa'.
 
+-- 9. Aumente em 8% o preço dos produtos da categoria 'Especiais da Casa'.
+      
 
 -- 10. Altere o status do pedido criado para 'PREPARANDO'.
 

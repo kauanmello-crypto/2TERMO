@@ -155,7 +155,8 @@ ORDER BY PRECO;
 -- Pergunta de negócio:
 --  Qual é a classificação dos produtos vendidos em cada categoria e qual é o preço médio de cada classificação?
 -- Por que essa informação é útil?
--- Saber a classificação dos produtos vendidos em cada categoria e o preço médio de cada classificação é útil para entender o posicionamento de mercado dos produtos, identificar oportunidades de ajuste de preços, e auxiliar na tomada de decisões estratégicas de marketing e vendas.
+-- Saber a classificação dos produtos vendidos em cada categoria e o preço médio de cada classificação é útil para entender o posicionamento de 
+--mercado dos produtos, identificar oportunidades de ajuste de preços, e auxiliar na tomada de decisões estratégicas de marketing e vendas.
 -- Consulta: 
 
 SELECT C.NOME_CATEGORIA, 
