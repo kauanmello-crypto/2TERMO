@@ -1,0 +1,314 @@
+
+   /* RESET E VARIÁVEIS (IDENTIDADE VISUAL) */
+
+:root {
+    --cor-primaria: #0f172a;     
+    --cor-secundaria: #1e293b;   
+    --cor-destaque: #06b6d4;      
+    --cor-destaque-hover: #0891b2;
+    --cor-verde: #10b981;      
+    --cor-texto: #f8fafc;         
+    --cor-texto-suave: #cbd5e1;   
+    --fundo-geral: #090d16;       
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--fundo-geral);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+   /* CABEÇALHO E MENU  */
+
+.cabecalho {
+    background-color: rgba(15, 23, 42, 0.95);
+    border-bottom: 1px solid rgba(6, 182, 212, 0.2);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--cor-destaque);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: var(--cor-destaque);
+}
+
+   /* BANNER PRINCIPAL */
+
+.banner {
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, #020617 100%);
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.banner-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.banner-texto {
+    flex: 1;
+}
+
+.banner-texto h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, var(--cor-texto), var(--cor-destaque));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-texto p {
+    font-size: 1.15rem;
+    color: var(--cor-texto-suave);
+    margin-bottom: 2rem;
+}
+
+.botao {
+    display: inline-block;
+    background-color: var(--cor-destaque);
+    color: #020617;
+    padding: 0.85rem 1.8rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: var(--cor-destaque-hover);
+    transform: translateY(-2px);
+}
+
+.banner-imagem {
+    flex: 1;
+}
+
+.banner-imagem img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(6, 182, 212, 0.15);
+    border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+
+   /* SEÇÃO DE ATRAÇÕES  */
+
+.secao {
+    padding: 4.5rem 0;
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    color: var(--cor-texto);
+}
+
+.titulo-secao::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--cor-destaque);
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+
+.grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    border-color: var(--cor-destaque);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.categoria {
+    align-self: flex-start;
+    background-color: rgba(6, 182, 212, 0.15);
+    color: var(--cor-destaque);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+}
+
+.card-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.card-info p {
+    color: var(--cor-texto-suave);
+    font-size: 0.95rem;
+}
+
+
+/* PROGRAMAÇÃO E SOBRE (CSS GRID DUPLO) */
+
+.grid-duplo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.caixa-info {
+    background-color: var(--cor-primaria);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.caixa-info h2 {
+    color: var(--cor-destaque);
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.lista-horarios {
+    list-style: none;
+}
+
+.lista-horarios li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.lista-horarios li:last-child {
+    border-bottom: none;
+}
+
+.lista-horarios strong {
+    color: var(--cor-verde);
+    margin-right: 0.5rem;
+}
+
+.caixa-info p {
+    color: var(--cor-texto-suave);
+    margin-bottom: 1rem;
+}
+
+
+
+
+/* RODAPÉ */
+
+.rodape {
+    text-align: center;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 3rem;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.rodape p {
+    margin: 0.25rem 0;
+}
+
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .banner-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-texto h2 {
+        font-size: 2.1rem;
+    }
+
+    .grid-duplo {
+        grid-template-columns: 1fr; /* Empilha Programação e Sobre em telas menores */
+    }
+}
