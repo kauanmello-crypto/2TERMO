@@ -1,3 +1,15 @@
+:root {
+    --cor-marrom-escuro: #3b2314;
+    --cor-marrom-hover: #5c3821;
+    --cor-marrom-texto: #1a0f08;
+    --cor-laranja-principal: #d97724;
+    --cor-laranja-bloco: #c26519;
+    --cor-dourado: #ffd700;
+    --cor-branco: #ffffff;
+    --fonte-serif: Georgia, 'Times New Roman', serif;
+    --fonte-sans: Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +17,8 @@
 }
 
 body {
-    background-color: #ffffff;
-    font-family: Georgia, 'Times New Roman', serif;
+    background-color: var(--cor-branco);
+    font-family: var(--fonte-serif);
 }
 
 
@@ -15,14 +27,14 @@ body {
 
 .topo {
     width: 100%;
-    background-color: #3b2314;
-    color: #ffffff;
+    background-color: var(--cor-marrom-escuro);
+    color: var(--cor-branco);
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 12px solid #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 12px solid var(--cor-branco);
+    font-family: var(--fonte-sans);
 }
 
 .menu {
@@ -33,18 +45,18 @@ body {
 
 .banner {
     width: 100%;
-    background-color: #d97724;
+    background-color: var(--cor-laranja-principal);
     padding: 45px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    border-bottom: 14px solid #ffffff;
+    border-bottom: 14px solid var(--cor-branco);
 }
 
 .banner-esquerda {
     max-width: 600px;
-    color: #ffffff;
+    color: var(--cor-branco);
 }
 
 .banner-direita {
@@ -66,12 +78,12 @@ body {
 
 .faixa-info {
     width: 100%;
-    background-color: #d97724;
+    background-color: var(--cor-laranja-principal);
     padding: 40px 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    border-bottom: 14px solid #ffffff;
+    border-bottom: 14px solid var(--cor-branco);
 }
 
 
@@ -81,25 +93,25 @@ body {
 .logo {
     font-weight: bold;
     font-size: 22px;
-    color: #ffd700;
+    color: var(--cor-dourado);
 }
 
 .menu a {
-    color: #ffffff;
+    color: var(--cor-branco);
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
 }
 
 .menu a:hover {
-    color: #ffd700;
+    color: var(--cor-dourado);
 }
 
 .banner-esquerda h1 {
     font-size: 26px;
     margin-bottom: 15px;
-    color: #ffd700;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-dourado);
+    font-family: var(--fonte-sans);
 }
 
 .banner-esquerda p {
@@ -110,18 +122,18 @@ body {
 
 .botao {
     display: inline-block;
-    background-color: #3b2314;
-    color: #ffd700;
+    background-color: var(--cor-marrom-escuro);
+    color: var(--cor-dourado);
     padding: 12px 24px;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-sans);
     font-weight: bold;
     font-size: 14px;
     border-radius: 25px;
 }
 
 .botao:hover {
-    background-color: #5c3821;
+    background-color: var(--cor-marrom-hover);
 }
 
 .banner-direita img {
@@ -140,40 +152,40 @@ body {
 
 .legenda {
     margin-top: 8px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-sans);
     font-weight: bold;
     font-size: 15px;
-    color: #1a0f08;
+    color: var(--cor-marrom-texto);
     max-width: 160px;
 }
 
 /* Faixa dos cards */
 .faixa-atracoes {
     width: 100%;
-    background-color: #d97724;
+    background-color: var(--cor-laranja-principal);
     padding: 40px 60px;
-    border-bottom: 14px solid #ffffff;
+    border-bottom: 14px solid var(--cor-branco);
 }
 
 .faixa-atracoes h2 {
     text-align: center;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-branco);
+    font-family: var(--fonte-sans);
     margin-bottom: 30px;
     font-size: 22px;
 }
 
 .card {
     text-align: center;
-    color: #ffffff;
+    color: var(--cor-branco);
     padding: 15px;
 }
 
 .categoria {
     display: inline-block;
-    background-color: #3b2314;
-    color: #ffd700;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-marrom-escuro);
+    color: var(--cor-dourado);
+    font-family: var(--fonte-sans);
     font-size: 12px;
     font-weight: bold;
     padding: 4px 12px;
@@ -189,7 +201,7 @@ body {
     margin: 0 auto 14px auto;
     object-fit: cover;
     border-radius: 8px;
-    border: 2px solid #3b2314;
+    border: 2px solid var(--cor-marrom-escuro);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
@@ -202,8 +214,8 @@ body {
 .card h3 {
     font-size: 18px;
     margin-bottom: 6px;
-    color: #ffd700;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-dourado);
+    font-family: var(--fonte-sans);
 }
 
 .card p {
@@ -213,17 +225,17 @@ body {
 
 /* Blocos de Programação e Sobre */
 .bloco-info {
-    color: #ffffff;
-    background-color: #c26519;
-    border: 2px solid #ffd700;
+    color: var(--cor-branco);
+    background-color: var(--cor-laranja-bloco);
+    border: 2px solid var(--cor-dourado);
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .bloco-info h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffd700;
+    font-family: var(--fonte-sans);
+    color: var(--cor-dourado);
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -242,15 +254,15 @@ body {
 /* Rodapé */
 .rodape {
     width: 100%;
-    background-color: #3b2314;
-    color: #ffffff;
+    background-color: var(--cor-marrom-escuro);
+    color: var(--cor-branco);
     text-align: center;
     padding: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-sans);
     font-size: 14px;
 }
 
-/* Responsivo para telas menores */
+
 @media (max-width: 768px) {
     .topo, .banner {
         flex-direction: column;
