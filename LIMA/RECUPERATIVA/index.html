@@ -3,108 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gato Fest, o festival temático inspirado nas aventuras do Gato de Botas.">
     <title>Gato Fest - Festival Gato de Botas</title>
     <link rel="stylesheet" href="recuperativa.css">
 </head>
 <body>
 
     <header class="topo">
-        <span class="logo">GATO FEST</span>
-        <nav class="menu">
+        <a href="#inicio" class="logo">GATO FEST</a>
+        <nav class="menu" aria-label="Menu principal">
             <a href="#inicio">INÍCIO</a>
-            <span>|</span>
+            <span aria-hidden="true">|</span>
             <a href="#atracoes">ATRAÇÕES</a>
-            <span>|</span>
+            <span aria-hidden="true">|</span>
             <a href="#programacao">PROGRAMAÇÃO</a>
-            <span>|</span>
+            <span aria-hidden="true">|</span>
             <a href="#sobre">SOBRE</a>
         </nav>
-    </header> 
+    </header>
 
-    <section id="inicio" class="banner">
-        <div class="banner-esquerda">
-            <h1>O LENDÁRIO FORA DA LEI CHEGOU</h1>
-            <p>Venha viver uma aventura inesquecível em San Ricardo! Duelos de espada, música flamenca, leite fresco na tigela e a grande busca pela Estrela dos Desejos para toda a família.</p>
-            <a href="#atracoes" class="botao">Explorar atrações</a>
-        </div>
-
-        <div class="banner-direita">
-            <img src="https://tse1.mm.bing.net/th/id/OIP.0vyx2harU8xLbJcwa0LGzwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Gato de Botas">
-            <span class="legenda">O destemido Gato de Botas</span>
-        </div>
-    </section>
-
-    
-    <section id="atracoes" class="faixa-atracoes">
-        <h2>ATRAÇÕES DO FESTIVAL</h2>
-
-        <div class="grade-cards">
-            <article class="card">
-                <span class="categoria">Aventura</span>
-                <img src="https://img.freepik.com/fotos-gratis/esgrima_654080-2248.jpg" alt="Arena de Esgrima">
-                <h3>Arena de Esgrima</h3>
-                <p>Duelos de espada com os melhores espadachins do reino.</p>
+    <main>
+        <!-- Banner -->
+        <section id="inicio" class="banner">
+            <article class="banner-esquerda">
+                <h1>O LENDÁRIO FORA DA LEI CHEGOU</h1>
+                <p>Venha viver uma aventura inesquecível em San Ricardo! Duelos de espada, música flamenca, leite fresco na tigela e a grande busca pela Estrela dos Desejos para toda a família.</p>
+                <a href="#atracoes" class="botao">Explorar atrações</a>
             </article>
 
-            <article class="card">
-                <span class="categoria">Aventura</span>
-                <img src="https://img.freepik.com/fotos-premium/paisagem-sombria-assustadora-nebulosa-da-floresta-escura-ilustracao-3d-de-fundo-de-floresta-de-horror-misterioso_598586-1754.jpg" alt="Floresta Sombria">
-                <h3>Trilha da Estrela</h3>
-                <p>Caça ao tesouro inspirada no mapa da Floresta Sombria.</p>
+            <figure class="banner-direita">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.0vyx2harU8xLbJcwa0LGzwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Gato de Botas">
+                <figcaption class="legenda">O destemido Gato de Botas</figcaption>
+            </figure>
+        </section>
+
+        <!-- Atrações -->
+        <section id="atracoes" class="faixa-atracoes">
+            <h2>ATRAÇÕES DO FESTIVAL</h2>
+
+            <section class="grade-cards">
+                <article class="card">
+                    <p class="categoria">Aventura</p>
+                    <img src="https://img.freepik.com/fotos-gratis/esgrima_654080-2248.jpg" alt="Arena de Esgrima" loading="lazy">
+                    <h3>Arena de Esgrima</h3>
+                    <p>Duelos de espada com os melhores espadachins do reino.</p>
+                </article>
+
+                <article class="card">
+                    <p class="categoria">Aventura</p>
+                    <img src="https://img.freepik.com/fotos-premium/paisagem-sombria-assustadora-nebulosa-da-floresta-escura-ilustracao-3d-de-fundo-de-floresta-de-horror-misterioso_598586-1754.jpg" alt="Floresta Sombria" loading="lazy">
+                    <h3>Trilha da Estrela</h3>
+                    <p>Caça ao tesouro inspirada no mapa da Floresta Sombria.</p>
+                </article>
+
+                <article class="card">
+                    <p class="categoria">Gastronomia</p>
+                    <img src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/6705c0153732a133cfe9d4c0_6697272ad1a1b0e1e67110e6_image_961525d6_1721070980616_1024.jpeg" alt="Taverna do Leite" loading="lazy">
+                    <h3>Taverna do Leite</h3>
+                    <p>Degustação de leite fresco servido na tigela.</p>
+                </article>
+
+                <article class="card">
+                    <p class="categoria">Gastronomia</p>
+                    <img src="https://img.freepik.com/premium-photo/14thcentury-hungarian-feast-large-table-medieval-banquet-hall-period-attire-traditional-food_1161356-158611.jpg" alt="Banquete Real" loading="lazy">
+                    <h3>Banquete de Limeira city</h3>
+                    <p>Empanadas e pratos típicos da vila do Gato.</p>
+                </article>
+
+                <article class="card">
+                    <p class="categoria">Show</p>
+                    <img src="https://clubepaineiras.org.br/wp-content/uploads/2022/10/danca-flamenca-5-800x450.jpg" alt="Dança Flamenca" loading="lazy">
+                    <h3>Duelo de Dança</h3>
+                    <p>Show de violão e sapateado com Kitty Pata-Mansa.</p>
+                </article>
+
+                <article class="card">
+                    <p class="categoria">Show</p>
+                    <img src="https://agoravocesabe.com/wp-content/uploads/2024/05/Plano-de-Aula-de-Contacao-de-Historia-para-Educacao-Infantil-Alinhado-a-BNCC-Passo-a-Passo-e-Atividades-1600x914.webp" alt="Espaço do Perrito" loading="lazy">
+                    <h3>Espaço do Perrito</h3>
+                    <p>Contação de histórias e brincadeiras para crianças.</p>
+                </article>
+            </section>
+        </section>
+
+        <!-- Programação e Sobre -->
+        <section class="faixa-info">
+            <article id="programacao" class="bloco-info">
+                <h2>PROGRAMAÇÃO</h2>
+                <ul>
+                    <li><time datetime="10:00"><strong>10:00</strong></time> - Abertura dos portões de Limeira city</li>
+                    <li><time datetime="13:30"><strong>13:30</strong></time> - Torneio de Esgrima na Praça</li>
+                    <li><time datetime="16:00"><strong>16:00</strong></time> - Hora do Leite na Taverna</li>
+                    <li><time datetime="19:30"><strong>19:30</strong></time> - Grande Show de Flamenco</li>
+                </ul>
             </article>
 
-            <article class="card">
-                <span class="categoria">Gastronomia</span>
-                <img src="https://cdn.prod.website-files.com/6600e1eab90de089c2d9c9cd/6705c0153732a133cfe9d4c0_6697272ad1a1b0e1e67110e6_image_961525d6_1721070980616_1024.jpeg" alt="caverna do Leite">
-                <h3>Taverna do Leite</h3>
-                <p>Degustação de leite fresco servido na tigela.</p>
+            <article id="sobre" class="bloco-info">
+                <h2>SOBRE O FESTIVAL</h2>
+                <p>O Gato Fest é um evento temático inspirado nas aventuras do Gato de Botas, reunindo música, gastronomia e desafios para toda a família.</p>
             </article>
+        </section>
+    </main>
 
-            <article class="card">
-                <span class="categoria">Gastronomia</span>
-                <img src="https://img.freepik.com/premium-photo/14thcentury-hungarian-feast-large-table-medieval-banquet-hall-period-attire-traditional-food_1161356-158611.jpg" alt="Banquete Real">
-                <h3>Banquete de Limeira city</h3>
-                <p>Empanadas e pratos típicos da vila do Gato.</p>
-            </article>
-
-            <article class="card">
-                <span class="categoria">Show</span>
-                <img src="https://clubepaineiras.org.br/wp-content/uploads/2022/10/danca-flamenca-5-800x450.jpg" alt="Dança Flamenca">
-                <h3>Duelo de Dança</h3>
-                <p>Show de violão e sapateado com Kitty Pata-Mansa.</p>
-            </article>
-
-            <article class="card">
-                <span class="categoria">Show</span>
-                <img src="https://agoravocesabe.com/wp-content/uploads/2024/05/Plano-de-Aula-de-Contacao-de-Historia-para-Educacao-Infantil-Alinhado-a-BNCC-Passo-a-Passo-e-Atividades-1600x914.webp" alt="Espaço do Perrito">
-                <h3>Espaço do Perrito</h3>
-                <p>Contação de histórias e brincadeiras para crianças.</p>
-            </article>
-        </div>
-    </section>
-
-    <!-- Programação e Sobre -->
-    <section class="faixa-info">
-        <div id="programacao" class="bloco-info">
-            <h2>PROGRAMAÇÃO</h2>
-            <ul>
-                <li><strong>10:00</strong> - Abertura dos portões de Limeira city </li>
-                <li><strong>13:30</strong> - Torneio de Esgrima na Praça</li>
-                <li><strong>16:00</strong> - Hora do Leite na Taverna</li>
-                <li><strong>19:30</strong> - Grande Show de Flamenco</li>
-            </ul>
-        </div>
-
-        <div id="sobre" class="bloco-info">
-            <h2>SOBRE O FESTIVAL</h2>
-            <p>O Gato Fest é um evento temático inspirado nas aventuras do Gato de Botas, reunindo música, gastronomia e desafios para toda a família.</p>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
     <footer class="rodape">
-        <p>Gato Fest © 2026| Contato: contato@gatofest.com.br | Projeto desenvolvido por Kauan Rodrigo </p>
-     
+        <p>Gato Fest © 2026 | Projeto desenvolvido por Kauan Rodrigo</p>
+        <address>Contato: <a href="mailto:contato@gatofest.com.br">contato@gatofest.com.br</a></address>
     </footer>
 
 </body>
